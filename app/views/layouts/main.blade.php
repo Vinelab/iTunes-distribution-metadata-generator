@@ -46,10 +46,10 @@
 
     </div> <!-- /container -->        <script src="{{asset('assets/vendor/js/jquery.min.js')}}"></script>
 
-
         <script>window.jQuery || document.write('<script src="{{asset('assets/vendor/js/jquery-1.11.1.min.js')}}"><\/script>')</script>
 
         <script src="{{asset('assets/vendor/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('assets/vendor/js/handlebars-v2.0.0.js')}}"></script>
 
         <script src="{{asset('assets/js/main.js')}}"></script>
 

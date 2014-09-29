@@ -112,7 +112,7 @@
                       >
                 </div>
 
-               <div class="form-group indent-1">
+               <div class="form-group indent-2">
                   <input type="text"
                          required
                          class="form-control"
@@ -122,15 +122,37 @@
                       >
                 </div>
 
-               <div class="form-group indent-1">
+               <div class="form-group indent-2">
                   <input type="text"
                          required
                          class="form-control"
                          placeholder="Album Genres"
                          name="package[album][genres][1]"
-                         value="ALTERNATIVE-00 XXX"
+                         value="WORLD-00 XXX"
                       >
                 </div>
+
+              <div class="form-group indent-1">
+                  <input type="text"
+                         class="form-control"
+                         placeholder="Album Copyright P-Line"
+                         name="package[album][copyright_pline]"
+                         value="2014 Mega Production XXX"
+                      >
+                </div>
+
+              <div class="form-group indent-1">
+                  <input type="text"
+                         class="form-control"
+                         placeholder="Album Copyright © Line"
+                         name="package[album][copyright_cline]"
+                         value="2015 Gega Production XXX"
+                      >
+                </div>
+
+
+
+
 
 
 
