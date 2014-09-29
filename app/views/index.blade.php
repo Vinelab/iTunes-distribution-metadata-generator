@@ -112,42 +112,14 @@
                       >
                 </div>
 
-
-
-
-
-
-
-
-
-            <!-- Duplicated area -->
-            <div class="multiple" id="genre-group">
-                <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" name="genre">
+                <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" id="genre">
                     <i class="glyphicon glyphicon-plus"></i>
                 </button>
+            <!-- Duplicable Field -->
+            <div class="multiple" id="genre-group">
+
             </div>
-
-            <script id="genre-template" type="text/x-handlebars-template">
-
-               <div class="form-group dup-form-grp indent-2 genre">
-                  <input type="text"
-                         required
-                         class="form-control"
-                         placeholder="Album Genres"
-                         name="package[album][genres][@{{count}}]"
-                         value="TRANCE-00 XXX"
-                      >
-                </div>
-
-            </script>
-            <!--/ Duplicated area -->
-
-
-
-
-
-
-
+            <!--/ Duplicable Field -->
 
               <div class="form-group indent-1">
                   <input type="text"
@@ -167,6 +139,35 @@
                       >
                 </div>
 
+
+
+
+              <div class="form-group indent-1">
+                  <input type="text"
+                         class="form-control"
+                         placeholder="Album Artwork (File Name)"
+                         name="package[album][artwork_files][file][file_name]"
+                         value="cover.jpg XXX"
+                      >
+             </div>
+
+              <div class="form-group indent-1">
+                  <input type="text"
+                         class="form-control"
+                         placeholder="Album Artwork (File Size)"
+                         name="package[album][artwork_files][file][size]"
+                         value="57591649 XXX"
+                      >
+             </div>
+
+             <div class="form-group indent-1">
+                  <input type="text"
+                         class="form-control"
+                         placeholder="Album Artwork (Checksum)"
+                         name="package[album][artwork_files][file][checksum]"
+                         value="ffa9327b444559d4d72312b2c7d660ff XXX"
+                      >
+             </div>
 
 
 

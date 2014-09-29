@@ -1,0 +1,9 @@
+<div class="form-group dup-form-grp indent-2 genre">
+    <input   type="text"
+             required
+             class="form-control"
+             placeholder="Album Genres"
+             name="package[album][genres][{{count}}]"
+          >
+</div>
+

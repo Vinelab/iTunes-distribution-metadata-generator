@@ -36,23 +36,37 @@ class HomeController extends BaseController {
     {
         foreach($array_data as $key => $value)
         {
+
             if(is_array($value))
             {
+//var_dump($key);
+
                 $subnode = $xml_obj->addChild("$key");
 
                 $this->arrayToXml($value, $subnode, $key);
             }
             else
             {
-                if($node == 'genres')
+                switch ($node)
                 {
-                    $xml_obj->addChild("genre")->addAttribute("code", "$value");
+                    case 'genres':
+                        $xml_obj->addChild("genre")->addAttribute("code", "$value");
+                        break;
 
-                }else{
-                    $xml_obj->addChild("$key", "$value");
+                    case 'file':
+                        if ($key == 'checksum')
+                            $xml_obj->addChild("$key", "$value")->addAttribute("type", "md5");
+                        else
+                            $xml_obj->addChild("$key", "$value");
+                        break;
+
+                    default:
+                        $xml_obj->addChild("$key", "$value");
+                        break;
                 }
             }
         }
+//        dd();
     }
 
 }
