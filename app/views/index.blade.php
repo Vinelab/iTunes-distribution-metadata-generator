@@ -112,25 +112,42 @@
                       >
                 </div>
 
-               <div class="form-group indent-2">
+
+
+
+
+
+
+
+
+            <!-- Duplicated area -->
+            <div class="multiple" id="genre-group">
+                <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" name="genre">
+                    <i class="glyphicon glyphicon-plus"></i>
+                </button>
+            </div>
+
+            <script id="genre-template" type="text/x-handlebars-template">
+
+               <div class="form-group dup-form-grp indent-2 genre">
                   <input type="text"
                          required
                          class="form-control"
                          placeholder="Album Genres"
-                         name="package[album][genres][0]"
-                         value="ALTERNATIVE-00 XXX"
+                         name="package[album][genres][@{{count}}]"
+                         value="TRANCE-00 XXX"
                       >
                 </div>
 
-               <div class="form-group indent-2">
-                  <input type="text"
-                         required
-                         class="form-control"
-                         placeholder="Album Genres"
-                         name="package[album][genres][1]"
-                         value="WORLD-00 XXX"
-                      >
-                </div>
+            </script>
+            <!--/ Duplicated area -->
+
+
+
+
+
+
+
 
               <div class="form-group indent-1">
                   <input type="text"
