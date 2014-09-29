@@ -21,7 +21,7 @@ class HomeController extends BaseController {
     public function submit()
     {
         $data = Input::get();
-//        dd($data);
+
         // function call to convert array to xml
         $this->arrayToXml($data, $this->xml);
 
@@ -34,15 +34,13 @@ class HomeController extends BaseController {
     // function to convert array to xml
     function arrayToXml($array_data, &$xml_obj, $node = null)
     {
+//        var_dump($array_data);
         foreach($array_data as $key => $value)
         {
 
-            if(is_array($value))
+            if(is_array($value) and ! is_numeric($key))
             {
-//var_dump($key);
-
                 $subnode = $xml_obj->addChild("$key");
-
                 $this->arrayToXml($value, $subnode, $key);
             }
             else
@@ -51,6 +49,7 @@ class HomeController extends BaseController {
                 {
                     case 'genres':
                         $xml_obj->addChild("genre")->addAttribute("code", "$value");
+                        // convert to array then iterate to add attributes
                         break;
 
                     case 'file':
@@ -59,14 +58,33 @@ class HomeController extends BaseController {
                         else
                             $xml_obj->addChild("$key", "$value");
                         break;
+                    
+                    case 'products':
+                        $subnode = $xml_obj->addChild("product");
+                        foreach($value as $sub_key => $sub_value)
+                            $subnode->addChild("$sub_key", "$sub_value");
+                        break;
+                    
+                    case 'artists':
+                        $subnode = $xml_obj->addChild("artist");
+                        foreach($value as $sub_key => $sub_value)
+                        {
+                            if( $sub_key == "roles" )
+                                $subnode->addChild($sub_key)->addChild("role", $sub_value['role']);
+                            else
+                                $subnode->addChild("$sub_key", "$sub_value");
+                        }
+                        break;
 
                     default:
+
                         $xml_obj->addChild("$key", "$value");
                         break;
                 }
             }
         }
-//        dd();
+
+        return $xml_obj;
     }
 
 }

@@ -24,7 +24,9 @@
 .dup-form-grp{
     width: 95%;
 }
-
+.form-group input{
+    margin-top: 5px;
+}
 .btn-circle {
     width: 30px;
     height: 30px;

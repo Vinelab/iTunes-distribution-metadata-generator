@@ -1,0 +1,36 @@
+<div class="form-group dup-form-grp indent-1 artist">
+        <input   type="text"
+                 required
+                 class="form-control"
+                 placeholder="Artist Name"
+                 name="package[album][artists][{{count}}][artist_name]"
+                 value="Artist Name-{{count}} XXX"
+                >
+
+        <input   type="text"
+                 required
+                 class="form-control"
+                 placeholder="Artist ID"
+                 name="package[album][artists][{{count}}][artist_id]"
+                 value="3868597{{count}} XXX"
+                >
+
+        <input   type="text"
+                 required
+                 class="form-control"
+                 placeholder="Artist Role"
+                 name="package[album][artists][{{count}}][roles][role]"
+                 value="Producer XXX"
+                >
+
+        <input   type="text"
+                 required
+                 class="form-control"
+                 placeholder="Primary Status"
+                 name="package[album][artists][{{count}}][primary]"
+                 value="false XXX"
+                >
+
+
+</div>
+

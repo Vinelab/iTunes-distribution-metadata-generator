@@ -112,14 +112,13 @@
                       >
                 </div>
 
+                 <!-- Duplicable Field -->
                 <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" id="genre">
                     <i class="glyphicon glyphicon-plus"></i>
                 </button>
-            <!-- Duplicable Field -->
-            <div class="multiple" id="genre-group">
 
-            </div>
-            <!--/ Duplicable Field -->
+                <div class="multiple" id="genre-group"></div>
+                <!--/ Duplicable Field -->
 
               <div class="form-group indent-1">
                   <input type="text"
@@ -139,9 +138,6 @@
                       >
                 </div>
 
-
-
-
               <div class="form-group indent-1">
                   <input type="text"
                          class="form-control"
@@ -149,18 +145,14 @@
                          name="package[album][artwork_files][file][file_name]"
                          value="cover.jpg XXX"
                       >
-             </div>
 
-              <div class="form-group indent-1">
                   <input type="text"
                          class="form-control"
                          placeholder="Album Artwork (File Size)"
                          name="package[album][artwork_files][file][size]"
                          value="57591649 XXX"
                       >
-             </div>
 
-             <div class="form-group indent-1">
                   <input type="text"
                          class="form-control"
                          placeholder="Album Artwork (Checksum)"
@@ -168,6 +160,51 @@
                          value="ffa9327b444559d4d72312b2c7d660ff XXX"
                       >
              </div>
+
+
+              <div class="form-group indent-1">
+                  <input type="text"
+                         class="form-control"
+                         placeholder="Album Track Count"
+                         name="package[album][track_count]"
+                         value="3"
+                      >
+                </div>
+
+
+
+                <!-- Duplicable Field -->
+                <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" id="product">
+                    <i class="glyphicon glyphicon-plus"></i>
+                </button>
+
+                <div class="multiple" id="product-group"></div>
+                <!--/ Duplicable Field -->
+
+
+
+                <!-- Duplicable Field -->
+                <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" id="artist">
+                    <i class="glyphicon glyphicon-plus"></i>
+                </button>
+
+                <div class="multiple" id="artist-group"></div>
+                <!--/ Duplicable Field -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

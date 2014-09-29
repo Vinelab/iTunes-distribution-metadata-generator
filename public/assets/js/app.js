@@ -6,6 +6,8 @@ $(function () {
     function setup()
     {
         duplicate("genre");
+        duplicate("product");
+        duplicate("artist");
     }
 
     // listener field duplication buttons
