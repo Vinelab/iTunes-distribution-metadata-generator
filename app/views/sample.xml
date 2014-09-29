@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="music5.1">
+    <language>en</language>
+    <provider>OneLittleIndian</provider>
+    <album>
+        <vendor_id>5099749642829</vendor_id>
+        <upc>5099749642829</upc>
+        <grid>A10302B0000114391R</grid>
+        <vendor_offer_code>408CH98720X103</vendor_offer_code>
+        <title>Medúlla (Remastered)</title>
+        <original_release_date>2004-08-30</original_release_date>
+        <label_name>One Little Indian</label_name>
+        <genres>
+            <genre code="ALTERNATIVE-00"/>
+            <genre code="WORLD-00"/>
+        </genres>
+        <copyright_pline>2004 One Little Indian</copyright_pline>
+        <copyright_cline>2004 One Little Indian</copyright_cline>
+        <artwork_files>
+            <file>
+                <file_name>cover.jpg</file_name>
+                <size>6591649</size>
+                <checksum type="md5">ffa9327b444559d4d72312b2c7d660ff</checksum>
+            </file>
+        </artwork_files>
+        <track_count>3</track_count>
+        <products>
+            <product>
+                <territory>GB</territory>
+                <wholesale_price_tier>3</wholesale_price_tier>
+                <sales_start_date>2004-10-22</sales_start_date>
+                <cleared_for_sale>true</cleared_for_sale>
+                <cleared_for_ticketmaster>true</cleared_for_ticketmaster>
+            </product>
+            <product>
+                <territory>IE</territory>
+                <wholesale_price_tier>3</wholesale_price_tier>
+                <sales_start_date>2004-10-22</sales_start_date>
+                <cleared_for_sale>true</cleared_for_sale>
+                <cleared_for_ticketmaster>true</cleared_for_ticketmaster>
+            </product>
+        </products>
+        <artists>
+            <artist>
+                <artist_name>Björk</artist_name>
+                <apple_id>295015</apple_id>
+                <roles>
+                    <role>Performer</role>
+                </roles>
+                <primary>true</primary>
+            </artist>
+            <artist>
+                <apple_id>458966378</apple_id>
+                <roles>
+                    <role>Producer</role>
+                </roles>
+                <primary>false</primary>
+            </artist>
+            <artist>
+                <artist_name>Ewan Pearson</artist_name>
+                <apple_id>3868597</apple_id>
+                <roles>
+                    <role>Producer</role>
+                </roles>
+                <primary>false</primary>
+            </artist>
+        </artists>
+        <tracks>
+            <track>
+                <vendor_id>GBBFT0501345_9083</vendor_id>
+                <isrc>GBBFT0501345</isrc>
+                <grid>A10302B00002427998</grid>
+                <title>The Pleasure Is All Mine</title>
+                <title_version></title_version>
+                <gapless_play>true</gapless_play>
+                <genres>
+                    <genre code="ELECTRONIC-00"/>
+                    <genre code="WORLD-00"/>
+                </genres>
+                <products>
+                    <product>
+                        <territory>GB</territory>
+                        <cleared_for_sale>true</cleared_for_sale>
+                        <wholesale_price_tier>98</wholesale_price_tier>
+                    </product>
+                    <product>
+                        <territory>IE</territory>
+                        <cleared_for_sale>true</cleared_for_sale>
+                        <wholesale_price_tier>98</wholesale_price_tier>
+                    </product>
+                </products>
+                <label_name>One Little Indian</label_name>
+                <copyright_pline>2004 One Little Indian</copyright_pline>
+                <explicit_content>none</explicit_content>
+                <lyrics format="html"><![CDATA['Twas brillig, and the slithy
+toves<br>Did gyre and gimble in the wabe:<br>All mimsy were the borogoves,<br>And
+the mome raths outgrabe.<br><br><i>Beware the Jabberwock, my son!</i><br><i>The
+jaws that bite, the claws that catch!</i><br>Beware the Jubjub bird, and shun<br>The
+<u>frumious</u> Bandersnatch!]]></lyrics>
+                <volume_number>1</volume_number>
+                <track_number>1</track_number>
+                <audio_file>
+                    <file_name>pleasure.m4a</file_name>
+                    <size>26556655</size>
+                    <checksum type="md5">6ddabb680edae6bf2ec84ffcfa730fda
+                    </checksum>
+                </audio_file>
+                <preview_start_index>30</preview_start_index>
+                <artists>
+                    <artist>
+                        <artist_name>Björk</artist_name>
+                        <apple_id>295015</apple_id>
+                        <roles>
+                            <role>Performer</role>
+                        </roles>
+                        <primary>true</primary>
+                    </artist>
+                    <artist>
+                        <apple_id>458966378</apple_id>
+                        <roles>
+                            <role>Producer</role>
+                        </roles>
+                        <primary>false</primary>
+                    </artist>
+                </artists>
+            </track>
+            <track>
+                <vendor_id>GBBFT0460211_2369</vendor_id>
+                <isrc>GBBFT0460211</isrc>
+                <title>Vokuro</title>
+                <title_version>Super DJ Remix</title_version>
+                <gapless_play>false</gapless_play>
+                <genres>
+                    <genre code="ELECTRONIC-00"/>
+                    <genre code="DANCE-00"/>
+                </genres>
+                <products>
+                    <product>
+                        <territory>GB</territory>
+                        <cleared_for_sale>true</cleared_for_sale>
+                        <wholesale_price_tier>98</wholesale_price_tier>
+                    </product>
+                    <product>
+                        <territory>IE</territory>
+                        <wholesale_price_tier>98</wholesale_price_tier>
+                        <cleared_for_sale>true</cleared_for_sale>
+                    </product>
+                </products>
+                <label_name>One Little Indian</label_name>
+                <copyright_pline>2004 One Little Indian</copyright_pline>
+                <explicit_content>explicit</explicit_content>
+                <lyrics format="html"><![CDATA[And, as in uffish thought he
+stood,<br>The Jabberwock, with eyes of flame,<br>Came whiffling through the tulgey
+wood,<br>And burbled as it came!<br><br><i>One, two! One, two!</i> And through
+and through<br>The vorpal blade went snicker-snack!<br>He left it dead, and with
+its head<br>He went galumphing back.]]></lyrics>
+                <volume_number>1</volume_number>
+                <track_number>2</track_number>
+                <audio_file>
+                    <file_name>vokuro.m4a</file_name>
+                    <size>78256392</size>
+                    <checksum type="md5">58cba368bd1fdf50cc7d3e44a59e4dc4
+                    </checksum>
+                </audio_file>
+                <preview_start_index>30</preview_start_index>
+                <artists>
+                    <artist>
+                        <artist_name>Björk</artist_name>
+                        <apple_id>295015</apple_id>
+                        <roles>
+                            <role>Performer</role>
+                        </roles>
+                        <primary>true</primary>
+                    </artist>
+                    <artist>
+                        <apple_id>458966378</apple_id>
+                        <roles>
+                            <role>Producer</role>
+                        </roles>
+                        <primary>false</primary>
+                    </artist>
+                </artists>
+            </track>
+            <track>
+                <vendor_id>GBBFT2500811_0912</vendor_id>
+                <isrc>GBBFT2500811</isrc>
+                <title>Medúlla Medly</title>
+                <title_version>Radio Edit</title_version>
+                <gapless_play>false</gapless_play>
+                <genres>
+                    <genre code="ELECTRONIC-00"/>
+                    <genre code="WORLD-00"/>
+                </genres>
+                <products>
+                    <product>
+                        <territory>GB</territory>
+                        <cleared_for_sale>true</cleared_for_sale>
+                        <wholesale_price_tier>98</wholesale_price_tier>
+                    </product>
+                    <product>
+                        <territory>IE</territory>
+                        <cleared_for_sale>true</cleared_for_sale>
+                    </product>
+                </products>
+                <label_name>One Little Indian</label_name>
+                <copyright_pline>2004 One Little Indian</copyright_pline>
+                <lyrics format="html"><![CDATA[He took his vorpal sword in
+hand:<br>Long time the manxome foe he sought<br>So rested he by the Tumtum
+tree,<br>And stood awhile in thought.<br><br><i>And, hast thou slain the
+Jabberwock?</i><br><i>Come to my arms, my beamish boy!</i><br>O frabjous day!
+Callooh! Callay!<br>He chortled in his joy.]]></lyrics>
+                <volume_number>1</volume_number>
+                <track_number>3</track_number>
+                <audio_file>
+                    <file_name>medly.m4a</file_name>
+                    <size>99253792</size>
+                    <checksum type="md5">c3330a3565baf58300bba711e3c26966
+                    </checksum>
+                </audio_file>
+                <preview_start_index>30</preview_start_index>
+                <artists>
+                    <artist>
+                        <artist_name>Björk</artist_name>
+                        <apple_id>295015</apple_id>
+                        <roles>
+                            <role>Performer</role>
+                        </roles>
+                        <primary>true</primary>
+                    </artist>
+                    <artist>
+                        <apple_id>458966378</apple_id>
+                        <roles>
+                            <role>Producer</role>
+                        </roles>
+                        <primary>false</primary>
+                    </artist>
+                </artists>
+                <chapters>
+                    <chapter>
+                        <chapter_start_time>00:00:00.000</chapter_start_time>
+                        <chapter_title>Triumph of a Heart</chapter_title>
+                        <artwork_file>
+                            <file_name>triumph.jpg</file_name>
+                            <size>5866324</size>
+                            <checksum type="md5">ed93d0f322c8d4175d4a353a4c645130
+                            </checksum>
+                        </artwork_file>
+                    </chapter>
+                    <chapter>
+                        <chapter_start_time>00:02:45.000</chapter_start_time>
+                        <chapter_title>Who Is It</chapter_title>
+                        <artwork_file>
+                            <file_name>who.jpg</file_name>
+                            <size>6852291</size>
+                            <checksum type="md5">86bed345f40d1117ef05c34c1e8537a9
+                            </checksum>
+                        </artwork_file>
+                    </chapter>
+                </chapters>
+            </track>
+        </tracks>
+    </album>
+</package>
