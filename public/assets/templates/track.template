@@ -46,25 +46,10 @@
                 >
 
         <!-- Genre Duplicable Field -->
-        <div class="multiple track-genre-group">
-            <button type="button" class="btn btn-info btn-circle pull-right track-duplicable-btn" section="track-genre">
+        <div class="multiple track-genre-group-{{track_count}}">
+            <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-genre" num="{{track_count}}">
                 <i class="glyphicon glyphicon-plus"></i>
             </button>
-
-
-            <script id="track-genre-{{track_count}}" type="text/x-handlebars-template">
-
-                <div class="form-group dup-form-grp indent-1 track-genre">
-                    <input   type="text"
-                             required
-                             class="form-control"
-                             placeholder="Album Genre"
-                             name="package[album][tracks][{{track_count}}][genres][{{count}}]"
-                             value="House-11{{count}} >> Track counter = {{track_count}} XXX"
-                            >
-                </div>
-
-            </script>
         </div>
         <!--/ Genre Duplicable Field -->
 
