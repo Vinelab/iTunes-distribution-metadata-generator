@@ -24,7 +24,8 @@
           <div class="container">
 
             <form class="" role="form" action="{{route('generate')}}">
- 
+
+                <label>Album: </label>
                 <!-- Hidden -->
                 <div class="form-group hidden indent-0">
                   <input type="text"
@@ -112,13 +113,15 @@
                       >
                 </div>
 
-                 <!-- Duplicable Field -->
-                <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" id="genre">
-                    <i class="glyphicon glyphicon-plus"></i>
-                </button>
+                 <!-- Genre Duplicable Field -->
 
-                <div class="multiple" id="genre-group"></div>
-                <!--/ Duplicable Field -->
+
+                <div class="multiple genre-group">
+                     <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="genre">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </button>
+                </div>
+                <!--/ Genre Duplicable Field -->
 
               <div class="form-group indent-1">
                   <input type="text"
@@ -159,8 +162,7 @@
                          name="package[album][artwork_files][file][checksum]"
                          value="ffa9327b444559d4d72312b2c7d660ff XXX"
                       >
-             </div>
-
+              </div>
 
               <div class="form-group indent-1">
                   <input type="text"
@@ -171,47 +173,37 @@
                       >
                 </div>
 
-
-
-                <!-- Duplicable Field -->
-                <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" id="product">
-                    <i class="glyphicon glyphicon-plus"></i>
-                </button>
-
-                <div class="multiple" id="product-group"></div>
-                <!--/ Duplicable Field -->
-
-
-
-                <!-- Duplicable Field -->
-                <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" id="artist">
-                    <i class="glyphicon glyphicon-plus"></i>
-                </button>
-
-                <div class="multiple" id="artist-group"></div>
-                <!--/ Duplicable Field -->
+                <!-- Product Duplicable Field -->
+                <div class="multiple product-group">
+                    <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="product">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </button>
+                </div>
+                <!--/ Product Duplicable Field -->
 
 
 
+                <!-- Artist Duplicable Field -->
+                <div class="multiple artist-group" >
+                    <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="artist">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </button>
+                </div>
+                <!--/ Artist Duplicable Field -->
 
 
+                <!-- Track Duplicable Field -->
+
+                <div class="multiple track-group">
+                     <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </button>
+                </div>
+
+                <!--/ Track Duplicable Field -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <button type="submit" class="btn btn-lg btn-success">Generate</button>
+                <button type="submit" class="btn btn-lg btn-success pull-right">Generate</button>
 
             </form>
 

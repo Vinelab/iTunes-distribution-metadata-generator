@@ -21,7 +21,7 @@ class HomeController extends BaseController {
     public function submit()
     {
         $data = Input::get();
-
+        dd($data);
         // function call to convert array to xml
         $this->arrayToXml($data, $this->xml);
 
@@ -37,7 +37,6 @@ class HomeController extends BaseController {
 //        var_dump($array_data);
         foreach($array_data as $key => $value)
         {
-
             if(is_array($value) and ! is_numeric($key))
             {
                 $subnode = $xml_obj->addChild("$key");

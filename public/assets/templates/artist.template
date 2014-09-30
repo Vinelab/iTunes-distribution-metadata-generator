@@ -1,4 +1,6 @@
 <div class="form-group dup-form-grp indent-1 artist">
+
+        <label>Artist: {{count}}</label>
         <input   type="text"
                  required
                  class="form-control"

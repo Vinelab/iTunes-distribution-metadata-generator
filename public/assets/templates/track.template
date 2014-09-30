@@ -1,0 +1,99 @@
+<div class="form-group dup-form-grp indent-1 track">
+        <label>Track: {{track_count}}</label>
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Vendor ID"
+                 name="package[album][tracks][{{track_count}}][vendor_id]"
+                 value="TRACK START HEREEEEEEEEEEEEEEEEEEEEEEEEEEEE {{track_count}} XXX"
+                >
+
+        <input   type="text"
+                 required
+                 class="form-control"
+                 placeholder="Track ISRC"
+                 name="package[album][tracks][{{track_count}}][isrc]"
+                 value="GBBFT0501345{{track_count}} XXX"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track GRID"
+                 name="package[album][tracks][{{track_count}}][grid]"
+                 value="A10302B00002427998{{track_count}} XXX"
+                >
+
+        <input   type="text"
+                 required
+                 class="form-control"
+                 placeholder="Track Title"
+                 name="package[album][tracks][{{track_count}}][title]"
+                 value="Mega Song {{track_count}} XXX"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Title Version"
+                 name="package[album][tracks][{{track_count}}][title_version]"
+                 value="{{track_count}} XXX"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Gapless Play"
+                 name="package[album][tracks][{{track_count}}][gapless_play]"
+                 value="true XXX"
+                >
+
+        <!-- Genre Duplicable Field -->
+        <div class="multiple track-genre-group">
+            <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-genre">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+        </div>
+        <!--/ Genre Duplicable Field -->
+
+
+        <!--&lt;!&ndash; Product Duplicable Field &ndash;&gt;-->
+        <!--<div class="multiple track-product-group">-->
+            <!--<button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-product">-->
+                <!--<i class="glyphicon glyphicon-plus"></i>-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;/ Product Duplicable Field &ndash;&gt;-->
+
+
+<!--        Possible documentation problem here   missing  <label_name>   compare:  P 21 and P 37       -->
+
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Label Name"
+                 name="package[album][tracks][{{track_count}}][label_name]"
+                 value="MEGA {{track_count}} XXX"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Copyright P-Line"
+                 name="package[album][tracks][{{track_count}}][copyright_pline]"
+                 value="2004 One Mega {{track_count}} XXX"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Parental Advisory"
+                 name="package[album][tracks][{{track_count}}][explicit_content]"
+                 value="2004 One Mega {{track_count}} XXX"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Parental Advisory"
+                 name="package[album][tracks][{{track_count}}][explicit_content]"
+                 value="2004 One Mega {{track_count}} XXX"
+                >
+
+
+</div>
+

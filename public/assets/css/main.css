@@ -20,6 +20,13 @@
     background-color: lightblue;
     padding: 10px;
 }
+.multiple{
+    background-color: rgb(221, 221, 221);
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: solid 1px rgb(159, 159, 159);
+}
 
 .dup-form-grp{
     width: 95%;
