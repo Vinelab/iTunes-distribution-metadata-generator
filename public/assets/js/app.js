@@ -2,7 +2,10 @@ $(function () {
 
     setup();
 
-    // inject the required fields in the html on runtime
+    /**
+     * injects the duplicable fields in the html on runtime
+     *
+     */
     function setup()
     {
         inject("genre", null);
@@ -11,7 +14,9 @@ $(function () {
         inject("track", null);
     }
 
-    // listen to duplicable buttons
+    /**
+     * listen to the duplicable buttons events
+     */
     jQuery(document.body).on('click','.duplicable-btn',function(e)
     {
         var section = $(this).attr('section');
@@ -19,10 +24,15 @@ $(function () {
 
         // inject the selected section
         inject(section, num);
-
     });
 
-    // the function injects a field | the num param is important for the track subsections
+
+    /**
+     * the function injects a field (template)
+     *
+     * @param section is a field or a group of fields
+     * @param num is used for the track subsections only to know which section to inject in
+     */
     function inject(section, num)
     {
         // get the template source from the server
@@ -31,43 +41,40 @@ $(function () {
             // compile the template with Handlebars
             var template = Handlebars.compile(source);
 
-            // the track_count is usefull for the track subsections
-            var track_count = $('.track').length;
-
+            // count how many of this template already exist in the HTML
             if(section == 'track-genre')
             {
-                // count how many of this template already exist in the HTML
                 var counter = $('.' + section + '-' + num).length;
-            }else{
-                // count how many of this template already exist in the HTML
-                var counter = $('.' + section).length;
-            }
-
-            // if section is 'track' then only the track_count is important else the absolute opposite
-            var context = {count: counter, track_count: track_count};
-
-            // build the final html
-            var field = template(context);
-
-            if(section == 'track-genre')
-            {
-                // append the field template to the html page
+                var context = {count: counter, track_count: num};
+                var field = template(context);
                 $("."+section+"-group-"+num).append(field);
-            }else
+            }
+            else
             {
-                // append the field template to the html page
+                var counter = $('.' + section).length;
+                var track_count = $('.track').length;
+                var context = {count: counter, track_count: track_count};
+                var field = template(context);
                 $("."+section+"-group").append(field);
             }
+
+
             // if is the track section, get (inject) its sub sections also
             if(section == 'track')
             {
                 inject("track-genre", track_count);
             }
+
         });
     }
 
 
-    // load the template source from the server
+    /**
+     * load the template source from the server
+     *
+     * @param section
+     * @param callback
+     */
     function getTemplateSource(section, callback)
     {
         $.ajax({
