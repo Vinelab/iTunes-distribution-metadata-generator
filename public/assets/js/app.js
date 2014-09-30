@@ -2,56 +2,94 @@ $(function () {
 
     setup();
 
-    // inject the duplicated fields in the html on runtime
+    // inject the required fields in the html on runtime
     function setup()
     {
-        duplicate("genre", null);
-        duplicate("product", null);
-        duplicate("artist", null);
-        duplicate("track", null);
-        duplicate("track-genre", null);
-//        duplicate("track-product", null);
+        inject("genre");
+        inject("product");
+        inject("artist");
+        inject("track");
     }
 
-    // listener field duplication buttons
+    // listen to duplicable buttons
     jQuery(document.body).on('click','.duplicable-btn',function(e)
     {
         var section = $(this).attr('section');
-
-        duplicate(section, $(this));
-
-        // if is the track section, duplicate the track sub sections also
-        if(section == 'track')
-        {
-            duplicate("track-genre", null);
-//            duplicate("track-product", null);
-        }
+        // inject the selected section
+        inject(section);
 
     });
 
-    // the function duplicates a field
-    function duplicate(section, element)
+    // listen to track duplicable buttons
+    jQuery(document.body).on('click','.track-duplicable-btn',function(e)
+    {
+        var section = $(this).attr('section');
+        // inject the selected section
+        track_inject(section);
+
+    });
+
+    // the function injects a field
+    function inject(section)
     {
         // get the template source from the server
-        getTemplateSource(section, function(source){
-
+        getTemplateSource(section, function(source)
+        {
             // compile the template with Handlebars
             var template = Handlebars.compile(source);
+
             // count how many of this template already exist in the HTML
             var counter = $('.' + section).length;
-            // pass that number to the template variable (count)
-            var context = {count: counter}
+            // the track_count is usefull for the track subsections
+            var track_count = $('.track').length;
+
+            // if section is 'track' then only the track_count is important else the absolute opposite
+            var context = {count: counter, track_count: track_count};
+
             // build the final html
             var field = template(context);
 
             // append the field template to the html page
-            if(element != null)
-                $(element).closest("."+section+"-group").append(field);
-            else
-                $("."+section+"-group").append(field);
+            $("."+section+"-group").append(field);
+
+            // if is the track section, get (inject) its sub sections also
+            if(section == 'track')
+            {
+                track_inject("track-genre");
+  //            inject("track-product", null);
+            }
+
 
         });
     }
+
+
+    // the function injects a field
+    function track_inject(section)
+    {
+        // count the tracks to figure out the group id
+        var track_count = $('.track').length;
+
+        // get the internal template source
+        var source = $("#"+section+"-"+track_count).html();
+        console.log($("#"+section+"-"+track_count));
+        alert($("#"+section+"-"+track_count));
+        // compile the template with Handlebars
+        var template = Handlebars.compile(source);
+
+        // count how many of this template already exist in the HTML
+        var counter = $('.' + section).length;
+
+        // if section is 'track' then only the track_count is important else the absolute opposite
+        var context = {count: counter, track_count: track_count};
+
+        // build the final html
+        var field = template(context);
+
+        // append the field template to the html page
+        $("."+section+"-group").append(field);
+    }
+
 
     // load the template source from the server
     function getTemplateSource(section, callback)
