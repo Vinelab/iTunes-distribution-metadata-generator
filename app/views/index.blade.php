@@ -32,7 +32,7 @@
                          required
                          class="form-control"
                          placeholder="Album Name"
-                         name="package[language]"
+                         name="[language]"
                          value="en"
                       >
                 </div>
@@ -42,7 +42,7 @@
                          required
                          class="form-control"
                          placeholder="Provider"
-                         name="package[provider]"
+                         name="[provider]"
                          value="Mega Production XXX"
                       >
                 </div>
@@ -51,7 +51,7 @@
                   <input type="text"
                          class="form-control"
                          placeholder="Vendor ID"
-                         name="package[album][vendor_id]"
+                         name="album[vendor_id]"
                          value="12345 XXX"
                       >
                 </div>
@@ -61,7 +61,7 @@
                          required
                          class="form-control"
                          placeholder="UPC (Universal Product Code)"
-                         name="package[album][upc]"
+                         name="album[upc]"
                          value="5099749642829 XXX"
                       >
                 </div>
@@ -70,7 +70,7 @@
                   <input type="text"
                          class="form-control"
                          placeholder="Album GRID"
-                         name="package[album][grid]"
+                         name="album[grid]"
                          value="A10302B0000114391R XXX"
                       >
                 </div>
@@ -79,7 +79,7 @@
                   <input type="text"
                          class="form-control"
                          placeholder="Vendor Offer Code"
-                         name="package[album][vendor_offer_code]"
+                         name="album[vendor_offer_code]"
                          value="408CH98720X103 XXX"
                       >
                 </div>
@@ -88,7 +88,7 @@
                   <input type="text"
                          class="form-control"
                          placeholder="Album Title"
-                         name="package[album][title]"
+                         name="album[title]"
                          value="Medulla (Remastered) XXX"
                       >
                 </div>
@@ -98,7 +98,7 @@
                          required
                          class="form-control"
                          placeholder="Original Album Release Date (YYYY-MM-DD)"
-                         name="package[album][original_release_date]"
+                         name="album[original_release_date]"
                          value="2014-07-07 XXX"
                       >
                 </div>
@@ -108,7 +108,7 @@
                          required
                          class="form-control"
                          placeholder="Album Label Name"
-                         name="package[album][label_name]"
+                         name="album[label_name]"
                          value="SUPER ALBUM XXX"
                       >
                 </div>
@@ -127,14 +127,14 @@
                   <input type="text"
                          class="form-control"
                          placeholder="Album Copyright P-Line"
-                         name="package[album][copyright_pline]"
+                         name="album[copyright_pline]"
                          value="2014 Mega Production XXX"
                       >
 
                   <input type="text"
                          class="form-control"
                          placeholder="Album Copyright © Line"
-                         name="package[album][copyright_cline]"
+                         name="album[copyright_cline]"
                          value="2015 Gega Production XXX"
                       >
                 </div>
@@ -143,21 +143,21 @@
                   <input type="text"
                          class="form-control"
                          placeholder="Album Artwork (File Name)"
-                         name="package[album][artwork_files][file][file_name]"
+                         name="album[artwork_files][file][file_name]"
                          value="cover.jpg XXX"
                       >
 
                   <input type="text"
                          class="form-control"
                          placeholder="Album Artwork (File Size)"
-                         name="package[album][artwork_files][file][size]"
+                         name="album[artwork_files][file][size]"
                          value="57591649 XXX"
                       >
 
                   <input type="text"
                          class="form-control"
                          placeholder="Album Artwork (Checksum)"
-                         name="package[album][artwork_files][file][checksum]"
+                         name="album[artwork_files][file][checksum]"
                          value="ffa9327b444559d4d72312b2c7d660ff XXX"
                       >
               </div>
@@ -166,7 +166,7 @@
                   <input type="text"
                          class="form-control"
                          placeholder="Album Track Count"
-                         name="package[album][track_count]"
+                         name="album[track_count]"
                          value="3"
                       >
                 </div>
@@ -197,7 +197,7 @@
                 </div>
                 <!--/ Track Duplicable Field -->
 
-                <button type="submit" class="btn btn-lg btn-success pull-right">Generate</button>
+                <button type="submit" class="btn btn-lg btn-success pull-right">Download XML</button>
 
             </form>
 

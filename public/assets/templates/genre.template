@@ -6,7 +6,7 @@
              required
              class="form-control"
              placeholder="Album Genre"
-             name="package[album][genres][{{count}}]"
+             name="album[genres][{{count}}]"
              value="Trance-00{{count}} XXX"
           >
 </div>

@@ -4,13 +4,15 @@ use Illuminate\Support\Facades\Input;
 
 class HomeController extends BaseController {
 
-    private $root = '<root/>';
+    private $root = '<package/>';
 
     protected $xml;
 
     public function __construct()
     {
         $this->xml = new SimpleXMLElement($this->root);
+        $this->xml->addAttribute("xmlns", "http://apple.com/itunes/importer");
+        $this->xml->addAttribute("version", "music5.1");
     }
 
 	public function index()
@@ -30,10 +32,15 @@ class HomeController extends BaseController {
         // function call to convert array to xml
         $this->arrayToXml($data, $this->xml);
 
+        // convert to string
         $xml_string = $this->xml->asXML();
 
-        // return XML
+        // return download XML
         return Response::make($xml_string, '200')
+                    ->header('Cache-Control', 'public')
+                    ->header('Content-Description', 'File Transfer')
+                    ->header('Content-Disposition', 'attachment; filename=iTunes-Album.xml')
+                    ->header('Content-Transfer-Encoding', 'binary')
                     ->header('Content-Type', 'text/xml');
     }
 
