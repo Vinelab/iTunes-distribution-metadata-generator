@@ -7,7 +7,6 @@
                  class="form-control"
                  placeholder="Album Territory"
                  name="album[products][{{count}}][territory]"
-                 value="GB-{{count}} XXX"
                 >
 
         <input   type="text"
@@ -15,28 +14,24 @@
                  class="form-control"
                  placeholder="Wholesale Price Tier"
                  name="album[products][{{count}}][wholesale_price_tier]"
-                 value="{{count}} XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Sales Start Date"
                  name="album[products][{{count}}][sales_start_date]"
-                 value="2004-10-22 XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Cleared for Sale"
                  name="album[products][{{count}}][cleared_for_sale]"
-                 value="true XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Cleared for Ticketmaster Sale"
                  name="album[products][{{count}}][cleared_for_ticketmaster]"
-                 value="true XXX"
                 >
 </div>
 

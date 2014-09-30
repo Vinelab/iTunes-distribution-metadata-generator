@@ -7,7 +7,6 @@
              class="form-control"
              placeholder="Album Genre"
              name="album[genres][{{count}}]"
-             value="Trance-00{{count}} XXX"
           >
 </div>
 

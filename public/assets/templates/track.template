@@ -5,7 +5,6 @@
                  class="form-control"
                  placeholder="Track Vendor ID"
                  name="album[tracks][{{track_count}}][vendor_id]"
-                 value="TRACK START HEREEEEEEEEEEEEEEEEEEEEEEEEEEEE {{track_count}} XXX"
                 >
 
         <input   type="text"
@@ -13,14 +12,12 @@
                  class="form-control"
                  placeholder="Track ISRC"
                  name="album[tracks][{{track_count}}][isrc]"
-                 value="GBBFT0501345{{track_count}} XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Track GRID"
                  name="album[tracks][{{track_count}}][grid]"
-                 value="A10302B00002427998{{track_count}} XXX"
                 >
 
         <input   type="text"
@@ -28,21 +25,18 @@
                  class="form-control"
                  placeholder="Track Title"
                  name="album[tracks][{{track_count}}][title]"
-                 value="Mega Song {{track_count}} XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Track Title Version"
                  name="album[tracks][{{track_count}}][title_version]"
-                 value="{{track_count}} XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Track Gapless Play"
                  name="album[tracks][{{track_count}}][gapless_play]"
-                 value="true XXX"
                 >
 
         <!-- Genre Duplicable Field -->
@@ -70,28 +64,24 @@
                  class="form-control"
                  placeholder="Track Label Name"
                  name="album[tracks][{{track_count}}][label_name]"
-                 value="MEGA {{track_count}} XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Track Copyright P-Line"
                  name="album[tracks][{{track_count}}][copyright_pline]"
-                 value="2004 One Mega {{track_count}} XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Track Parental Advisory"
                  name="album[tracks][{{track_count}}][explicit_content]"
-                 value="2004 One Mega {{track_count}} XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Track Parental Advisory"
                  name="album[tracks][{{track_count}}][explicit_content]"
-                 value="2004 One Mega {{track_count}} XXX"
                 >
 
 
@@ -99,19 +89,12 @@
                   rows="3"
                   placeholder="Track Lyrics"
                   name="album[tracks][{{track_count}}][lyrics]"
-                >
-<![CDATA['Twas brillig, and the slithy
-toves<br>Did gyre and gimble in the wabe:<br>All mimsy were the borogoves,<br>And
-the mome raths outgrabe.<br><br><i>Beware the Jabberwock, my son!</i><br><i>The
-jaws that bite, the claws that catch!</i><br>Beware the Jubjub bird, and shun<br>The
-<u>frumious</u> Bandersnatch!]]
-                </textarea>
+                ></textarea>
 
         <input   type="text"
                  class="form-control"
                  placeholder="Track Volume Number"
                  name="album[tracks][{{track_count}}][volume_number]"
-                 value="{{track_count}} XXX"
                 >
 
         <input   type="text"
@@ -119,9 +102,7 @@ jaws that bite, the claws that catch!</i><br>Beware the Jubjub bird, and shun<br
                  class="form-control"
                  placeholder="Track Number"
                  name="album[tracks][{{track_count}}][track_number]"
-                 value="{{track_count}} XXX"
                 >
-
 
 
           <div class="form-group indent-1 related-form-group">
@@ -130,7 +111,6 @@ jaws that bite, the claws that catch!</i><br>Beware the Jubjub bird, and shun<br
                          class="form-control"
                          placeholder="Track Audio File Name"
                          name="album[tracks][{{track_count}}][audio_file][file_name]"
-                         value="cover.jpg XXX"
                           >
 
                   <input type="text"
@@ -138,7 +118,6 @@ jaws that bite, the claws that catch!</i><br>Beware the Jubjub bird, and shun<br
                          class="form-control"
                          placeholder="Track Audio Asset (File Size)"
                          name="album[tracks][{{track_count}}][audio_file][size]"
-                         value="57591649 XXX"
                           >
 
                   <input type="text"
@@ -146,7 +125,6 @@ jaws that bite, the claws that catch!</i><br>Beware the Jubjub bird, and shun<br
                          class="form-control"
                          placeholder="Track Audio (Checksum)"
                          name="album[tracks][{{track_count}}][audio_file][checksum]"
-                         value="ffa9327b444559d4d72312b2c7d660ff XXX"
                           >
               </div>
 
@@ -157,7 +135,6 @@ jaws that bite, the claws that catch!</i><br>Beware the Jubjub bird, and shun<br
                      class="form-control"
                      placeholder="Track Preview Start"
                      name="album[tracks][{{track_count}}][preview_start_index]"
-                     value="{{track_count}} XXX"
                     >
 
 

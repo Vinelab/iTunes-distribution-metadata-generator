@@ -26,6 +26,8 @@
             <form class="" role="form" action="{{route('generate')}}">
 
                 <label>Album: </label>
+
+
                 <!-- Hidden -->
                 <div class="form-group hidden indent-0">
                   <input type="text"
@@ -36,6 +38,9 @@
                          value="en"
                       >
                 </div>
+                <!-- Hidden -->
+
+
 
                 <div class="form-group indent-0">
                   <input type="text"
@@ -43,8 +48,7 @@
                          class="form-control"
                          placeholder="Provider"
                          name="[provider]"
-                         value="Mega Production XXX"
-                      >
+                         >
                 </div>
 
                 <div class="form-group indent-1">
@@ -52,8 +56,7 @@
                          class="form-control"
                          placeholder="Vendor ID"
                          name="album[vendor_id]"
-                         value="12345 XXX"
-                      >
+                         >
                 </div>
 
                <div class="form-group indent-1">
@@ -62,8 +65,7 @@
                          class="form-control"
                          placeholder="UPC (Universal Product Code)"
                          name="album[upc]"
-                         value="5099749642829 XXX"
-                      >
+                         >
                 </div>
 
                <div class="form-group indent-1">
@@ -71,7 +73,6 @@
                          class="form-control"
                          placeholder="Album GRID"
                          name="album[grid]"
-                         value="A10302B0000114391R XXX"
                       >
                 </div>
 
@@ -80,8 +81,7 @@
                          class="form-control"
                          placeholder="Vendor Offer Code"
                          name="album[vendor_offer_code]"
-                         value="408CH98720X103 XXX"
-                      >
+                         >
                 </div>
 
                <div class="form-group indent-1">
@@ -89,8 +89,7 @@
                          class="form-control"
                          placeholder="Album Title"
                          name="album[title]"
-                         value="Medulla (Remastered) XXX"
-                      >
+                         >
                 </div>
 
                <div class="form-group indent-1">
@@ -99,8 +98,7 @@
                          class="form-control"
                          placeholder="Original Album Release Date (YYYY-MM-DD)"
                          name="album[original_release_date]"
-                         value="2014-07-07 XXX"
-                      >
+                         >
                 </div>
 
                <div class="form-group indent-1">
@@ -109,8 +107,7 @@
                          class="form-control"
                          placeholder="Album Label Name"
                          name="album[label_name]"
-                         value="SUPER ALBUM XXX"
-                      >
+                         >
                 </div>
 
                  <!-- Genre Duplicable Field -->
@@ -128,15 +125,13 @@
                          class="form-control"
                          placeholder="Album Copyright P-Line"
                          name="album[copyright_pline]"
-                         value="2014 Mega Production XXX"
-                      >
+                         >
 
                   <input type="text"
                          class="form-control"
                          placeholder="Album Copyright © Line"
                          name="album[copyright_cline]"
-                         value="2015 Gega Production XXX"
-                      >
+                         >
                 </div>
 
               <div class="form-group indent-1 related-form-group">
@@ -144,21 +139,18 @@
                          class="form-control"
                          placeholder="Album Artwork (File Name)"
                          name="album[artwork_files][file][file_name]"
-                         value="cover.jpg XXX"
-                      >
+                         >
 
                   <input type="text"
                          class="form-control"
                          placeholder="Album Artwork (File Size)"
                          name="album[artwork_files][file][size]"
-                         value="57591649 XXX"
-                      >
+                         >
 
                   <input type="text"
                          class="form-control"
                          placeholder="Album Artwork (Checksum)"
                          name="album[artwork_files][file][checksum]"
-                         value="ffa9327b444559d4d72312b2c7d660ff XXX"
                       >
               </div>
 
@@ -167,7 +159,6 @@
                          class="form-control"
                          placeholder="Album Track Count"
                          name="album[track_count]"
-                         value="3"
                       >
                 </div>
 

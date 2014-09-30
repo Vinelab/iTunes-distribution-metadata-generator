@@ -5,6 +5,5 @@
              class="form-control"
              placeholder="Album Genre"
              name="album[tracks][{{track_count}}][genres][{{count}}]"
-             value="House-11{{count}} >> Track counter = {{track_count}} XXX"
             >
 </div>

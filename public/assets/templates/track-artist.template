@@ -5,31 +5,25 @@
                  class="form-control"
                  placeholder="Artist Name"
                  name="album[tracks][{{track_count}}][artists][{{count}}][artist_name]"
-
-                 value="Artist Name-{{count}} XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Artist ID"
                  name="album[tracks][{{track_count}}][artists][{{count}}][artist_id]"
-                 value="3868597{{count}} XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Artist Role"
                  name="album[tracks][{{track_count}}][artists][{{count}}][roles][role]"
-                 value="Producer XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Primary Status"
                  name="album[artists][{{count}}][primary]"
-                 value="false XXX"
                 >
-
 
 </div>
 
