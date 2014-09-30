@@ -17,9 +17,13 @@ class HomeController extends BaseController {
 
 	public function index()
 	{
-		return View::make('index');
+		return View::make('landing');
 	}
 
+    public function select($type)
+    {
+        return View::make($type);
+    }
     /**
      * on form submit
      *
