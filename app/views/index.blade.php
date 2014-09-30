@@ -23,7 +23,7 @@
         <div class="jumbotron">
           <div class="container">
 
-            <form class="" role="form" action="{{route('generate')}}">
+            <form class="" role="form" method="post" action="{{route('generate')}}">
 
                 <label>Album: </label>
 

@@ -2,4 +2,4 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('generate', array('as' => 'generate', 'uses' => 'HomeController@submit'));
+Route::any('generate', array('as' => 'generate', 'uses' => 'HomeController@submit'));
