@@ -18,25 +18,38 @@ class HomeController extends BaseController {
 		return View::make('index');
 	}
 
+    /**
+     * on form submit
+     *
+     * @return mixed
+     */
     public function submit()
     {
         $data = Input::get();
-        dd($data);
+
         // function call to convert array to xml
         $this->arrayToXml($data, $this->xml);
 
         $xml_string = $this->xml->asXML();
 
+        // return XML
         return Response::make($xml_string, '200')
                     ->header('Content-Type', 'text/xml');
     }
 
-    // function to convert array to xml
+    /**
+     * function to convert array to xml
+     *
+     * @param $array_data
+     * @param $xml_obj
+     * @param null $node
+     */
     function arrayToXml($array_data, &$xml_obj, $node = null)
     {
-//        var_dump($array_data);
+
         foreach($array_data as $key => $value)
         {
+
             if(is_array($value) and ! is_numeric($key))
             {
                 $subnode = $xml_obj->addChild("$key");
@@ -46,44 +59,38 @@ class HomeController extends BaseController {
             {
                 switch ($node)
                 {
-                    case 'genres':
-                        $xml_obj->addChild("genre")->addAttribute("code", "$value");
-                        // convert to array then iterate to add attributes
-                        break;
-
-                    case 'file':
-                        if ($key == 'checksum')
-                            $xml_obj->addChild("$key", "$value")->addAttribute("type", "md5");
-                        else
-                            $xml_obj->addChild("$key", "$value");
-                        break;
-                    
                     case 'products':
                         $subnode = $xml_obj->addChild("product");
-                        foreach($value as $sub_key => $sub_value)
-                            $subnode->addChild("$sub_key", "$sub_value");
+                        $this->arrayToXml($value, $subnode, null);
                         break;
                     
                     case 'artists':
                         $subnode = $xml_obj->addChild("artist");
-                        foreach($value as $sub_key => $sub_value)
-                        {
-                            if( $sub_key == "roles" )
-                                $subnode->addChild($sub_key)->addChild("role", $sub_value['role']);
-                            else
-                                $subnode->addChild("$sub_key", "$sub_value");
-                        }
+                        $this->arrayToXml($value, $subnode, null);
+                        break;
+
+                    case 'tracks':
+                        $subnode = $xml_obj->addChild("track");
+                        $this->arrayToXml($value, $subnode, null);
+                        break;
+
+                    case 'genres':
+                        $xml_obj->addChild("genre")->addAttribute("code", "$value");
                         break;
 
                     default:
-
-                        $xml_obj->addChild("$key", "$value");
+                        if ($key == 'lyrics')
+                            $xml_obj->addChild("$key", "$value")->addAttribute("format", "html");
+                        else if ($key == 'checksum')
+                            $xml_obj->addChild("$key", "$value")->addAttribute("type", "md5");
+                        else
+                            $xml_obj->addChild("$key", "$value");
                         break;
                 }
             }
         }
 
-        return $xml_obj;
+
     }
 
 }
