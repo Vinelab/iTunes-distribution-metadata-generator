@@ -27,7 +27,15 @@
     margin-top: 5px;
     border: solid 1px rgb(159, 159, 159);
 }
-
+.related-form-group{
+    padding: 10px;
+    border: solid 1px rgb(159, 159, 159);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.text-area{
+    margin-top: 5px;
+}
 .dup-form-grp{
     width: 95%;
 }

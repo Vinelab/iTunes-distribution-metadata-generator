@@ -1,4 +1,5 @@
 <div class="form-group dup-form-grp indent-1 track-genre-{{track_count}}">
+     <label>Genre:</label>
     <input   type="text"
              required
              class="form-control"

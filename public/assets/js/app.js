@@ -1,5 +1,8 @@
 $(function () {
 
+    // array of the track sections names (duplicable subsections)
+    var track_sections = ["track-genre", "track-product", "track-artist"];
+
     setup();
 
     /**
@@ -41,8 +44,8 @@ $(function () {
             // compile the template with Handlebars
             var template = Handlebars.compile(source);
 
-            // count how many of this template already exist in the HTML
-            if(section == 'track-genre')
+            // if is a subsection of the 'track' section
+            if($.inArray(section, track_sections) > -1)
             {
                 var counter = $('.' + section + '-' + num).length;
                 var context = {count: counter, track_count: num};
@@ -63,6 +66,8 @@ $(function () {
             if(section == 'track')
             {
                 inject("track-genre", track_count);
+                inject("track-product", track_count);
+                inject("track-artist", track_count);
             }
 
         });

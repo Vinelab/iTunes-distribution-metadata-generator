@@ -1,5 +1,5 @@
 <div class="form-group dup-form-grp indent-1 track">
-        <label>Track: {{track_count}}</label>
+        <label>Track:</label>
 
         <input   type="text"
                  class="form-control"
@@ -54,13 +54,13 @@
         <!--/ Genre Duplicable Field -->
 
 
-        <!--&lt;!&ndash; Product Duplicable Field &ndash;&gt;-->
-        <!--<div class="multiple track-product-group">-->
-            <!--<button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-product">-->
-                <!--<i class="glyphicon glyphicon-plus"></i>-->
-            <!--</button>-->
-        <!--</div>-->
-        <!--&lt;!&ndash;/ Product Duplicable Field &ndash;&gt;-->
+        <!-- Product Duplicable Field -->
+        <div class="multiple track-product-group-{{track_count}}">
+            <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-product" num="{{track_count}}">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+        </div>
+        <!--/ Product Duplicable Field -->
 
 
 <!--        Possible documentation problem here   missing  <label_name>   compare:  P 21 and P 37       -->
@@ -93,6 +93,81 @@
                  name="package[album][tracks][{{track_count}}][explicit_content]"
                  value="2004 One Mega {{track_count}} XXX"
                 >
+
+
+        <textarea class="form-control text-area"
+                  rows="3"
+                  placeholder="Track Lyrics"
+                  name="package[album][tracks][{{track_count}}][lyrics]"
+                >
+<![CDATA['Twas brillig, and the slithy
+toves<br>Did gyre and gimble in the wabe:<br>All mimsy were the borogoves,<br>And
+the mome raths outgrabe.<br><br><i>Beware the Jabberwock, my son!</i><br><i>The
+jaws that bite, the claws that catch!</i><br>Beware the Jubjub bird, and shun<br>The
+<u>frumious</u> Bandersnatch!]]
+                </textarea>
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Volume Number"
+                 name="package[album][tracks][{{track_count}}][volume_number]"
+                 value="{{track_count}} XXX"
+                >
+
+        <input   type="text"
+                 required
+                 class="form-control"
+                 placeholder="Track Number"
+                 name="package[album][tracks][{{track_count}}][track_number]"
+                 value="{{track_count}} XXX"
+                >
+
+
+
+          <div class="form-group indent-1 related-form-group">
+                  <input type="text"
+                         required
+                         class="form-control"
+                         placeholder="Track Audio File Name"
+                         name="package[album][tracks][{{track_count}}][audio_file][file_name]"
+                         value="cover.jpg XXX"
+                          >
+
+                  <input type="text"
+                         required
+                         class="form-control"
+                         placeholder="Track Audio Asset (File Size)"
+                         name="package[album][tracks][{{track_count}}][audio_file][size]"
+                         value="57591649 XXX"
+                          >
+
+                  <input type="text"
+                         required
+                         class="form-control"
+                         placeholder="Track Audio (Checksum)"
+                         name="package[album][tracks][{{track_count}}][audio_file][checksum]"
+                         value="ffa9327b444559d4d72312b2c7d660ff XXX"
+                          >
+              </div>
+
+
+
+
+            <input   type="text"
+                     class="form-control"
+                     placeholder="Track Preview Start"
+                     name="package[album][tracks][{{track_count}}][preview_start_index]"
+                     value="{{track_count}} XXX"
+                    >
+
+
+            <!-- Artist Duplicable Field -->
+            <div class="multiple track-artist-group-{{track_count}}">
+                <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-artist" num="{{track_count}}">
+                    <i class="glyphicon glyphicon-plus"></i>
+                </button>
+            </div>
+            <!--/ Artist Duplicable Field -->
 
 
 </div>

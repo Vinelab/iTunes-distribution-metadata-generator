@@ -123,16 +123,14 @@
                 </div>
                 <!--/ Genre Duplicable Field -->
 
-              <div class="form-group indent-1">
+              <div class="form-group indent-1 related-form-group">
                   <input type="text"
                          class="form-control"
                          placeholder="Album Copyright P-Line"
                          name="package[album][copyright_pline]"
                          value="2014 Mega Production XXX"
                       >
-                </div>
 
-              <div class="form-group indent-1">
                   <input type="text"
                          class="form-control"
                          placeholder="Album Copyright © Line"
@@ -141,7 +139,7 @@
                       >
                 </div>
 
-              <div class="form-group indent-1">
+              <div class="form-group indent-1 related-form-group">
                   <input type="text"
                          class="form-control"
                          placeholder="Album Artwork (File Name)"
@@ -182,7 +180,6 @@
                 <!--/ Product Duplicable Field -->
 
 
-
                 <!-- Artist Duplicable Field -->
                 <div class="multiple artist-group" >
                     <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="artist">
@@ -193,15 +190,12 @@
 
 
                 <!-- Track Duplicable Field -->
-
                 <div class="multiple track-group">
                      <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track">
                         <i class="glyphicon glyphicon-plus"></i>
                     </button>
                 </div>
-
                 <!--/ Track Duplicable Field -->
-
 
                 <button type="submit" class="btn btn-lg btn-success pull-right">Generate</button>
 

@@ -1,6 +1,6 @@
 <div class="form-group dup-form-grp indent-1 product">
 
-        <label>Product: {{count}}</label>
+        <label>Product:</label>
 
         <input   type="text"
                  required

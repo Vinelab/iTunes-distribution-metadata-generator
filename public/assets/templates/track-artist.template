@@ -1,26 +1,25 @@
-<div class="form-group dup-form-grp indent-1 artist">
-
+<div class="form-group dup-form-grp indent-1 track-artist-{{track_count}}">
         <label>Artist:</label>
         <input   type="text"
                  required
                  class="form-control"
                  placeholder="Artist Name"
-                 name="package[album][artists][{{count}}][artist_name]"
+                 name="package[album][tracks][{{track_count}}][artists][{{count}}][artist_name]"
+
                  value="Artist Name-{{count}} XXX"
                 >
 
         <input   type="text"
-                 required
                  class="form-control"
                  placeholder="Artist ID"
-                 name="package[album][artists][{{count}}][artist_id]"
+                 name="package[album][tracks][{{track_count}}][artists][{{count}}][artist_id]"
                  value="3868597{{count}} XXX"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Artist Role"
-                 name="package[album][artists][{{count}}][roles][role]"
+                 name="package[album][tracks][{{track_count}}][artists][{{count}}][roles][role]"
                  value="Producer XXX"
                 >
 
