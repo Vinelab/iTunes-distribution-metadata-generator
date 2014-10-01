@@ -1,5 +1,4 @@
 <div class="form-group dup-form-grp indent-1 track">
-        <label>Track:</label>
 
         <input   type="text"
                  class="form-control"
@@ -41,6 +40,7 @@
 
         <!-- Genre Duplicable Field -->
         <div class="multiple track-genre-group-{{track_count}}">
+            <label>Track Genre</label>
             <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-genre" num="{{track_count}}">
                 <i class="glyphicon glyphicon-plus"></i>
             </button>
@@ -50,6 +50,7 @@
 
         <!-- Product Duplicable Field -->
         <div class="multiple track-product-group-{{track_count}}">
+             <label>Track Product</label>
             <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-product" num="{{track_count}}">
                 <i class="glyphicon glyphicon-plus"></i>
             </button>
@@ -140,6 +141,7 @@
 
             <!-- Artist Duplicable Field -->
             <div class="multiple track-artist-group-{{track_count}}">
+                <label>Track Artists</label>
                 <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-artist" num="{{track_count}}">
                     <i class="glyphicon glyphicon-plus"></i>
                 </button>

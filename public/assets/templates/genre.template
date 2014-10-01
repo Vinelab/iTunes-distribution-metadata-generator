@@ -1,7 +1,5 @@
 <div class="form-group dup-form-grp indent-1 genre">
 
-    <label>Album Genre:</label>
-
     <input   type="text"
              required
              class="form-control"

@@ -114,6 +114,7 @@
 
 
                 <div class="multiple genre-group">
+                     <label>Album Genre:</label>
                      <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="genre">
                         <i class="glyphicon glyphicon-plus"></i>
                     </button>
@@ -164,6 +165,7 @@
 
                 <!-- Product Duplicable Field -->
                 <div class="multiple product-group">
+                    <label>Products:</label>
                     <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="product">
                         <i class="glyphicon glyphicon-plus"></i>
                     </button>
@@ -173,6 +175,7 @@
 
                 <!-- Artist Duplicable Field -->
                 <div class="multiple artist-group" >
+                    <label>Artists:</label>
                     <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="artist">
                         <i class="glyphicon glyphicon-plus"></i>
                     </button>
@@ -182,6 +185,7 @@
 
                 <!-- Track Duplicable Field -->
                 <div class="multiple track-group">
+                    <label>Tracks:</label>
                      <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track">
                         <i class="glyphicon glyphicon-plus"></i>
                     </button>

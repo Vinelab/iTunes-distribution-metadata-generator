@@ -1,5 +1,5 @@
 <div class="form-group dup-form-grp indent-1 track-product-{{track_count}}">
-     <label>Product:</label>
+
         <input   type="text"
                  class="form-control"
                  placeholder="Track Album Territory"
