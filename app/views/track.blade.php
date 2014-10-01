@@ -10,15 +10,12 @@
 
             <form class="" role="form" method="post" action="{{route('generate')}}">
 
-                <label>Track: </label>
+                <label>Single Track: </label>
 
 
                 <!-- Track Duplicable Field -->
                 <div class="multiple track-group">
-                    <label>Tracks:</label>
-                     <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track">
-                        <i class="glyphicon glyphicon-plus"></i>
-                    </button>
+
                 </div>
                 <!--/ Track Duplicable Field -->
 

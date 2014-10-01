@@ -5,7 +5,7 @@ $(function () {
     var track_sections = ["track-genre", "track-product", "track-artist"];
     var remove_btn_template = null;
 
-
+    // initialize the app
     setup();
 
 

@@ -23,8 +23,15 @@
         <div class="jumbotron">
           <div class="container">
 
-            <a href="{{route('select', array('album'))}}" class="btn btn-default">Add Album</a>
-            <a href="{{route('select', array('track'))}}" class="btn btn-default">Add Track</a>
+
+            <div class="form-group">
+                <a href="{{route('select', array('album'))}}" class="btn btn-lg btn-select btn-primary">Add Tracks Album</a>
+            </div>
+
+            <div class="form-group">
+                <a href="{{route('select', array('track'))}}" class="btn btn-lg btn-select btn-primary">Add Single Track</a>
+            </div>
+
 
           </div>
         </div>

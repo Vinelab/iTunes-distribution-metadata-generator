@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @author Mahmoud Zalt <mahmoud@vinelab.com>
+ */
+
 use Illuminate\Support\Facades\Input;
 
 class HomeController extends BaseController {
@@ -39,6 +43,7 @@ class HomeController extends BaseController {
         // convert to string
         $xml_string = $this->xml->asXML();
 
+        // choosing the file name
         if(isset($data['album']['label_name']) and ! empty($data['album']['label_name']))
             $file_name = $data['album']['label_name'];
         else if(isset($data['tracks'][0]['label_name']) and ! empty($data['tracks'][0]['label_name']))
@@ -56,7 +61,7 @@ class HomeController extends BaseController {
     }
 
     /**
-     * function to convert array to xml
+     * function to the convert array to an xml obj
      *
      * @param $array_data
      * @param $xml_obj
@@ -64,10 +69,8 @@ class HomeController extends BaseController {
      */
     function arrayToXml($array_data, &$xml_obj, $node = null)
     {
-
         foreach($array_data as $key => $value)
         {
-
             if(is_array($value) and ! is_numeric($key))
             {
                 $subnode = $xml_obj->addChild("$key");
@@ -107,8 +110,7 @@ class HomeController extends BaseController {
                 }
             }
         }
-
-
     }
+
 
 }
