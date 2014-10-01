@@ -1,0 +1,11 @@
+<div class="form-group dup-form-grp indent-1 track-genre-{{track_count}}">
+
+    <input   type="text"
+             required
+             class="form-control"
+             placeholder="Album Genre"
+             name="tracks[{{track_count}}][genres][{{count}}]"
+            >
+
+    {{{remove_btn}}}
+</div>

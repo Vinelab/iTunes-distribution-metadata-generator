@@ -39,11 +39,18 @@ class HomeController extends BaseController {
         // convert to string
         $xml_string = $this->xml->asXML();
 
+        if(isset($data['album']['label_name']) and ! empty($data['album']['label_name']))
+            $file_name = $data['album']['label_name'];
+        else if(isset($data['tracks'][0]['label_name']) and ! empty($data['tracks'][0]['label_name']))
+            $file_name = $data['tracks'][0]['label_name'];
+        else
+            $file_name = 'iTunes';
+
         // return download XML
         return Response::make($xml_string, '200')
                     ->header('Cache-Control', 'public')
                     ->header('Content-Description', 'File Transfer')
-                    ->header('Content-Disposition', 'attachment; filename='.$data['album']['label_name'].'.xml')
+                    ->header('Content-Disposition', 'attachment; filename='.$file_name.'.xml')
                     ->header('Content-Transfer-Encoding', 'binary')
                     ->header('Content-Type', 'text/xml');
     }

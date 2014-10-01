@@ -4,28 +4,26 @@
                  required
                  class="form-control"
                  placeholder="Artist Name"
-                 name="album[tracks][{{track_count}}][artists][{{count}}][artist_name]"
+                 name="tracks[{{track_count}}][artists][{{count}}][artist_name]"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Artist ID"
-                 name="album[tracks][{{track_count}}][artists][{{count}}][artist_id]"
+                 name="tracks[{{track_count}}][artists][{{count}}][artist_id]"
                 >
 
         <input   type="text"
                  class="form-control"
                  placeholder="Artist Role"
-                 name="album[tracks][{{track_count}}][artists][{{count}}][roles][role]"
+                 name="tracks[{{track_count}}][artists][{{count}}][roles][role]"
                 >
-
 
         <input   type="text"
                  class="form-control"
                  placeholder="Primary Status"
-                 name="album[tracks][{{track_count}}][artists][{{count}}][primary]"
+                 name="tracks[{{track_count}}][artists][{{count}}][primary]"
                 >
-
 
     {{{remove_btn}}}
 </div>

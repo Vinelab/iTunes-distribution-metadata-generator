@@ -1,40 +1,68 @@
 $(function () {
 
+    var type = null;
     // array of the track sections names (duplicable subsections)
     var track_sections = ["track-genre", "track-product", "track-artist"];
     var remove_btn_template = null;
+
+
     setup();
+
 
     /**
      * injects the duplicable fields in the html on runtime
-     *
      */
     function setup()
     {
+        setAppType();
+
         // get the remove button template first
         getTemplateSource("remove-btn", function(source)
         {
             // get the remove button template ready
             remove_btn_template = Handlebars.compile(source);
 
-            inject("genre", null);
-            inject("product", null);
-            inject("artist", null);
-            inject("track", null);
+            if(type == 'album')
+            {
+                inject("genre", null);
+                inject("product", null);
+                inject("artist", null);
+                inject("track", null);
+            }else if(type == 'track')
+            {
+                inject("track", null);
+            }
+
         });
     }
+
+
+    /**
+     * set the app type [album] or [track]
+     * by getting the type form the url
+     */
+    function setAppType()
+    {
+        var url = document.URL;
+        // get the last segment of the url
+        type = url.split('/').pop();
+    }
+
 
     /**
      * listen to the duplicable buttons events
      */
     jQuery(document.body).on('click','.duplicable-btn',function(e)
     {
+        e.preventDefault();
+
         var section = $(this).attr('section');
         var num = $(this).attr('num');
 
         // inject the selected section
         inject(section, num);
     });
+
 
     /**
      * listen to the remove field buttons events
@@ -85,7 +113,6 @@ $(function () {
             $(element).append(field);
 
 
-
             // if is the track section, get (inject) its sub sections also
             if(section == 'track')
             {
@@ -106,9 +133,16 @@ $(function () {
      */
     function getTemplateSource(section, callback)
     {
+        // if type is track load the single track templates, except for the remove button
+        if(type == 'track' && section != 'remove-btn')
+            url = 'assets/templates/single-track-templates/' + section + '.template';
+        else
+            url = 'assets/templates/' + section + '.template';
+
+
         $.ajax({
             type: "GET",
-            url: 'assets/templates/' + section + '.template'
+            url: url
         }).done(function(data)
         {
             // call back the caller function with the received data

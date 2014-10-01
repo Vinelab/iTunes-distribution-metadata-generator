@@ -1,0 +1,23 @@
+<div class="form-group dup-form-grp indent-1 track-product-{{track_count}}">
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Album Territory"
+                 name="tracks[{{track_count}}][products][{{count}}][territory]"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Cleared for Sale"
+                 name="tracks[{{track_count}}][products][{{count}}][cleared_for_sale]"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Wholesale Price Tier"
+                 name="tracks[{{track_count}}][products][{{count}}][wholesale_price_tier]"
+                >
+
+    {{{remove_btn}}}
+</div>
+

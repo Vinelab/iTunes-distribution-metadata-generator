@@ -2,30 +2,29 @@
 
 @section('body')
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">iTunes distribution metadata generator</a>
-            </div>
-            <div class="navbar-collapse collapse">
-
-            </div><!--/.navbar-collapse -->
-          </div>
-        </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
           <div class="container">
 
+
+            <form class="" role="form" method="post" action="{{route('generate')}}">
+
                 <label>Track: </label>
 
 
+                <!-- Track Duplicable Field -->
+                <div class="multiple track-group">
+                    <label>Tracks:</label>
+                     <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track">
+                        <i class="glyphicon glyphicon-plus"></i>
+                    </button>
+                </div>
+                <!--/ Track Duplicable Field -->
+
+                <button type="submit" class="btn btn-lg btn-success pull-right">Download XML</button>
+
+              </form>
 
           </div>
         </div>

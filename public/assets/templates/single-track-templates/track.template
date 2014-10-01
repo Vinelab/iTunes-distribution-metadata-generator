@@ -1,0 +1,152 @@
+<div class="form-group dup-form-grp indent-1 track">
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Vendor ID"
+                 name="tracks[{{track_count}}][vendor_id]"
+                >
+
+        <input   type="text"
+                 required
+                 class="form-control"
+                 placeholder="Track ISRC"
+                 name="tracks[{{track_count}}][isrc]"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track GRID"
+                 name="tracks[{{track_count}}][grid]"
+                >
+
+        <input   type="text"
+                 required
+                 class="form-control"
+                 placeholder="Track Title"
+                 name="tracks[{{track_count}}][title]"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Title Version"
+                 name="tracks[{{track_count}}][title_version]"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Gapless Play"
+                 name="tracks[{{track_count}}][gapless_play]"
+                >
+
+        <!-- Genre Duplicable Field -->
+        <div class="multiple track-genre-group-{{track_count}}">
+            <label>Track Genre</label>
+            <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-genre" num="{{track_count}}">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+        </div>
+        <!--/ Genre Duplicable Field -->
+
+
+        <!-- Product Duplicable Field -->
+        <div class="multiple track-product-group-{{track_count}}">
+             <label>Track Product</label>
+            <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-product" num="{{track_count}}">
+                <i class="glyphicon glyphicon-plus"></i>
+            </button>
+        </div>
+        <!--/ Product Duplicable Field -->
+
+
+<!--        Possible documentation problem here   missing  <label_name>   compare:  P 21 and P 37       -->
+
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Label Name"
+                 name="tracks[{{track_count}}][label_name]"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Copyright P-Line"
+                 name="tracks[{{track_count}}][copyright_pline]"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Parental Advisory"
+                 name="tracks[{{track_count}}][explicit_content]"
+                >
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Parental Advisory"
+                 name="tracks[{{track_count}}][explicit_content]"
+                >
+
+
+        <textarea class="form-control text-area"
+                  rows="3"
+                  placeholder="Track Lyrics"
+                  name="tracks[{{track_count}}][lyrics]"
+                ></textarea>
+
+        <input   type="text"
+                 class="form-control"
+                 placeholder="Track Volume Number"
+                 name="tracks[{{track_count}}][volume_number]"
+                >
+
+        <input   type="text"
+                 required
+                 class="form-control"
+                 placeholder="Track Number"
+                 name="tracks[{{track_count}}][track_number]"
+                >
+
+
+          <div class="form-group indent-1 related-form-group">
+                  <input type="text"
+                         required
+                         class="form-control"
+                         placeholder="Track Audio File Name"
+                         name="tracks[{{track_count}}][audio_file][file_name]"
+                          >
+
+                  <input type="text"
+                         required
+                         class="form-control"
+                         placeholder="Track Audio Asset (File Size)"
+                         name="tracks[{{track_count}}][audio_file][size]"
+                          >
+
+                  <input type="text"
+                         required
+                         class="form-control"
+                         placeholder="Track Audio (Checksum)"
+                         name="tracks[{{track_count}}][audio_file][checksum]"
+                          >
+              </div>
+
+
+
+            <input   type="text"
+                     class="form-control"
+                     placeholder="Track Preview Start"
+                     name="tracks[{{track_count}}][preview_start_index]"
+                    >
+
+
+            <!-- Artist Duplicable Field -->
+            <div class="multiple track-artist-group-{{track_count}}">
+                <label>Track Artists</label>
+                <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-artist" num="{{track_count}}">
+                    <i class="glyphicon glyphicon-plus"></i>
+                </button>
+            </div>
+            <!--/ Artist Duplicable Field -->
+
+    {{{remove_btn}}}
+</div>
+
