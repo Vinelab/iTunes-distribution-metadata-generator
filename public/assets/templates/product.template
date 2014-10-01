@@ -31,5 +31,6 @@
                  placeholder="Cleared for Ticketmaster Sale"
                  name="album[products][{{count}}][cleared_for_ticketmaster]"
                 >
+    {{{remove_btn}}}
 </div>
 

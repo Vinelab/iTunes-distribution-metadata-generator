@@ -110,9 +110,7 @@
                          >
                 </div>
 
-                 <!-- Genre Duplicable Field -->
-
-
+                <!-- Genre Duplicable Field -->
                 <div class="multiple genre-group">
                      <label>Album Genre:</label>
                      <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="genre">

@@ -2,7 +2,7 @@ $(function () {
 
     // array of the track sections names (duplicable subsections)
     var track_sections = ["track-genre", "track-product", "track-artist"];
-
+    var remove_btn_template = null;
     setup();
 
     /**
@@ -11,10 +11,17 @@ $(function () {
      */
     function setup()
     {
-        inject("genre", null);
-        inject("product", null);
-        inject("artist", null);
-        inject("track", null);
+        // get the remove button template first
+        getTemplateSource("remove-btn", function(source)
+        {
+            // get the remove button template ready
+            remove_btn_template = Handlebars.compile(source);
+
+            inject("genre", null);
+            inject("product", null);
+            inject("artist", null);
+            inject("track", null);
+        });
     }
 
     /**
@@ -29,6 +36,15 @@ $(function () {
         inject(section, num);
     });
 
+    /**
+     * listen to the remove field buttons events
+     */
+    jQuery(document.body).on('click','.rm-btn-circle',function(e)
+    {
+        e.preventDefault();
+        $(this).closest('.form-group').remove();
+    });
+
 
     /**
      * the function injects a field (template)
@@ -41,25 +57,33 @@ $(function () {
         // get the template source from the server
         getTemplateSource(section, function(source)
         {
-            // compile the template with Handlebars
-            var template = Handlebars.compile(source);
 
             // if is a subsection of the 'track' section
             if($.inArray(section, track_sections) > -1)
             {
-                var counter = $('.' + section + '-' + num).length;
-                var context = {count: counter, track_count: num};
-                var field = template(context);
-                $("."+section+"-group-"+num).append(field);
+                var count = $('.' + section + '-' + num).length;
+                var track_count = num;
+                var element = "."+section+"-group-"+num;
             }
             else
             {
-                var counter = $('.' + section).length;
+                var count = $('.' + section).length;
                 var track_count = $('.track').length;
-                var context = {count: counter, track_count: track_count};
-                var field = template(context);
-                $("."+section+"-group").append(field);
+                var element = "."+section+"-group"
             }
+
+            // start adding the remove button after the first duplicate
+            var remove_btn = count > 0 ? remove_btn_template : null
+
+            var template = Handlebars.compile(source);
+            var context = {
+                            count: count,
+                            track_count: track_count,
+                            remove_btn: remove_btn
+                          };
+            var field = template(context);
+            $(element).append(field);
+
 
 
             // if is the track section, get (inject) its sub sections also

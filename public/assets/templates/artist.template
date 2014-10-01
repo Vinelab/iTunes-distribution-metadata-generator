@@ -25,5 +25,7 @@
                  placeholder="Primary Status"
                  name="album[artists][{{count}}][primary]"
                 >
+
+    {{{remove_btn}}}
 </div>
 

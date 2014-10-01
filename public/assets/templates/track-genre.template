@@ -6,4 +6,6 @@
              placeholder="Album Genre"
              name="album[tracks][{{track_count}}][genres][{{count}}]"
             >
+
+    {{{remove_btn}}}
 </div>

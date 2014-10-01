@@ -131,7 +131,6 @@
 
 
 
-
             <input   type="text"
                      class="form-control"
                      placeholder="Track Preview Start"
@@ -148,6 +147,6 @@
             </div>
             <!--/ Artist Duplicable Field -->
 
-
+    {{{remove_btn}}}
 </div>
 
