@@ -25,7 +25,7 @@
 
 
             <div class="form-group">
-                <a href="{{route('select', array('album'))}}" class="btn btn-lg btn-select btn-primary">Add Tracks Album</a>
+                <a href="{{route('select', array('album'))}}" class="btn btn-lg btn-select btn-primary">Add Album</a>
             </div>
 
             <div class="form-group">
