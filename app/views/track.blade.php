@@ -12,20 +12,19 @@
 
                 <label>Single Track: </label>
 
-
-                <!-- Track Duplicable Field -->
+                <!-- Track Field -->
                 <div class="multiple track-group">
 
                 </div>
-                <!--/ Track Duplicable Field -->
+                <!--/ Track Field -->
 
                 <button type="submit" class="btn btn-lg btn-success pull-right">Download XML</button>
 
               </form>
 
+
           </div>
         </div>
-
 
 
 @stop

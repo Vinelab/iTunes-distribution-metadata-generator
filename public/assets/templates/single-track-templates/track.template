@@ -39,24 +39,25 @@
                 >
 
         <!-- Genre Duplicable Field -->
-        <div class="multiple track-genre-group-{{track_count}}">
-            <label>Track Genre</label>
-            <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-genre" num="{{track_count}}">
-                <i class="glyphicon glyphicon-plus"></i>
+        <div class="duplicable-wrapper">
+            <label>Track Genre:</label>
+            <div class="multiple track-genre-group-{{track_count}}"></div>
+            <button type="button" class="btn btn-primary duplicable-btn" section="track-genre" num="{{track_count}}">
+                Add Track Genre
             </button>
         </div>
         <!--/ Genre Duplicable Field -->
 
 
         <!-- Product Duplicable Field -->
-        <div class="multiple track-product-group-{{track_count}}">
-             <label>Track Product</label>
-            <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-product" num="{{track_count}}">
-                <i class="glyphicon glyphicon-plus"></i>
+        <div class="duplicable-wrapper">
+            <label>Track Product:</label>
+            <div class="multiple track-product-group-{{track_count}}"></div>
+            <button type="button" class="btn btn-primary duplicable-btn" section="track-product" num="{{track_count}}">
+                Add Track Product
             </button>
         </div>
         <!--/ Product Duplicable Field -->
-
 
 <!--        Possible documentation problem here   missing  <label_name>   compare:  P 21 and P 37       -->
 
@@ -139,10 +140,11 @@
 
 
             <!-- Artist Duplicable Field -->
-            <div class="multiple track-artist-group-{{track_count}}">
-                <label>Track Artists</label>
-                <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track-artist" num="{{track_count}}">
-                    <i class="glyphicon glyphicon-plus"></i>
+            <div class="duplicable-wrapper">
+                <label>Track Artists:</label>
+                <div class="multiple track-artist-group-{{track_count}}"></div>
+                <button type="button" class="btn btn-primary duplicable-btn" section="track-artist" num="{{track_count}}">
+                    Add Track Artists
                 </button>
             </div>
             <!--/ Artist Duplicable Field -->

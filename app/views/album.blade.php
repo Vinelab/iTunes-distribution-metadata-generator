@@ -94,11 +94,12 @@
                          >
                 </div>
 
-                <!-- Genre Duplicable Field -->
-                <div class="multiple genre-group">
-                     <label>Album Genre:</label>
-                     <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="genre">
-                        <i class="glyphicon glyphicon-plus"></i>
+                 <!-- Genre Duplicable Field -->
+                <div class="duplicable-wrapper">
+                    <label>Album Genre:</label>
+                    <div class="multiple genre-group"></div>
+                    <button type="button" class="btn btn-primary duplicable-btn" section="genre">
+                          Add Album Genre
                     </button>
                 </div>
                 <!--/ Genre Duplicable Field -->
@@ -146,30 +147,33 @@
                 </div>
 
                 <!-- Product Duplicable Field -->
-                <div class="multiple product-group">
+                <div class="duplicable-wrapper">
                     <label>Products:</label>
-                    <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="product">
-                        <i class="glyphicon glyphicon-plus"></i>
+                    <div class="multiple product-group"></div>
+                    <button type="button" class="btn btn-primary duplicable-btn" section="product">
+                        Add Products
                     </button>
                 </div>
                 <!--/ Product Duplicable Field -->
 
 
                 <!-- Artist Duplicable Field -->
-                <div class="multiple artist-group" >
+                <div class="duplicable-wrapper">
                     <label>Artists:</label>
-                    <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="artist">
-                        <i class="glyphicon glyphicon-plus"></i>
+                    <div class="multiple artist-group"></div>
+                    <button type="button" class="btn btn-primary duplicable-btn" section="artist">
+                        Add Artists
                     </button>
                 </div>
                 <!--/ Artist Duplicable Field -->
 
 
                 <!-- Track Duplicable Field -->
-                <div class="multiple track-group">
+                <div class="duplicable-wrapper track-duplicable-wrapper">
                     <label>Tracks:</label>
-                     <button type="button" class="btn btn-info btn-circle pull-right duplicable-btn" section="track">
-                        <i class="glyphicon glyphicon-plus"></i>
+                    <div class="multiple track-group"></div>
+                    <button type="button" class="btn btn-primary duplicable-btn" section="track">
+                        Add Tracks
                     </button>
                 </div>
                 <!--/ Track Duplicable Field -->
