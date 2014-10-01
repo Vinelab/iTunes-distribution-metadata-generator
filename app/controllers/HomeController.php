@@ -43,7 +43,7 @@ class HomeController extends BaseController {
         return Response::make($xml_string, '200')
                     ->header('Cache-Control', 'public')
                     ->header('Content-Description', 'File Transfer')
-                    ->header('Content-Disposition', 'attachment; filename=iTunes-Album.xml')
+                    ->header('Content-Disposition', 'attachment; filename='.$data['album']['label_name'].'.xml')
                     ->header('Content-Transfer-Encoding', 'binary')
                     ->header('Content-Type', 'text/xml');
     }
